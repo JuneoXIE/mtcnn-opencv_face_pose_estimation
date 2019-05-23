@@ -2,14 +2,14 @@
 Use mtcnn to obtain 5 face key points and estimate face pose by cv2.solvePnP
 
 ## Steps:
-- mtcnn网络进行人脸检测输出bbox及脸部5个关键点 
+- mtcnn网络进行人脸检测输出bbox及脸部5个关键点(test.py) 
     - Left eye
     - Right eye
     - Nose tip
     - Left mouth corner
     - Right mouth corner  
  
-- 利用opencv solvePnP 估计脸部姿态, 得到rotation vector和 transition vector  
+- 利用opencv solvePnP 估计脸部姿态, 得到rotation vector和 transition vector(pose_estimate.py)  
 
 3D标准脸部5个关键点模板： 
 ``````
