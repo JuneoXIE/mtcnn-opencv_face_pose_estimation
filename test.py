@@ -8,6 +8,8 @@ import cv2
 import numpy as np
 import _pickle as pickle
 
+imgfilepath = ".../test_datasets"
+
 deploy = '12net.prototxt'
 caffemodel = '12net.caffemodel'
 net_12 = caffe.Net(deploy,caffemodel,caffe.TEST)
@@ -116,5 +118,4 @@ def save_bbox(imgfilepath):
     output.close()
 
 if __name__ == '__main__':
-    imgfilepath = "/xny/mtcnn-caffe-master/demo/test_datasets"
     save_bbox(imgfilepath)
